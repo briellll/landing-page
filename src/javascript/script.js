@@ -15,3 +15,30 @@ btnMobile.addEventListener('click', ()=>{
     }
 
 })
+
+function scrollAnimation(){
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-item');
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function (){
+
+        const scrollPosition = window.scrollY - header.offsetHeight;
+
+        if (scrollPosition <= 0){
+            header.classList.remove('header-move');
+        } else {
+            header.classList.add('header-move')
+        }
+
+    })
+}
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    scrollAnimation();
+})

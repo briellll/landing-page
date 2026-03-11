@@ -7,6 +7,12 @@ header {
     z-index: 3;
 }
 
+.header-move {
+    box-shadow: 5px 1px 5px rgba(0,0,0,0.1);
+}
+
+
+
 #navbar {
     width: 100%;
     display: flex;
